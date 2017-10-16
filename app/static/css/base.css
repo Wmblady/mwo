@@ -1,0 +1,29 @@
+html {
+	height: 100%;
+}
+
+body {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  font-family: 'Eczar', serif;
+}
+
+.panel {
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: yellow;}
+
+.rating-button {
+	background-color: white;
+}
