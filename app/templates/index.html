@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -28,6 +28,24 @@
                                         .clearfix:after {clear: both;}
                                         .clearfix {*zoom: 1;}
 
+
+										.abs-panel {
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											transform: translate(-50%, -50%);
+										}
+										
+										.table {
+											display: table-cell;
+											text-align: center;
+										}
+										
+										.row {
+											width: 100%;
+											display: table;
+											table-layout: fixed;
+										}
                             </style>
                                             
     </head>
@@ -44,6 +62,17 @@
                 </div>
             </div>
         </nav>
+		
+		<div class="panel container abs-panel">
+			{% for row in tables %}
+				<div class="row">
+				{% for table in row %}
+					<div class="table">isTable: {{table.isTable}}</div>
+				{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+
   
         
         <!-- Bootstrap core JavaScript
